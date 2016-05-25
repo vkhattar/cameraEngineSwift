@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="View1" customModule="SnapchatCamera" customModuleProvider="target">
+            <connections>
+                <outlet property="labelDuration" destination="hqb-Yo-mre" id="sy7-D8-xja"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOM-61-Wet">
+                    <rect key="frame" x="254" y="330" width="94" height="39"/>
+                    <color key="backgroundColor" red="1" green="0.7685913754" blue="0.68803577589999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="Video ME">
+                        <color key="titleColor" red="0.0084704277090000002" green="0.0097155449030000007" blue="0.0094120285750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="recordMe:" destination="-1" eventType="touchUpInside" id="jhc-bv-QCk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7F-3w-Nqa">
+                    <rect key="frame" x="23" y="30" width="50" height="33"/>
+                    <color key="backgroundColor" red="1" green="0.7685913754" blue="0.68803577589999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="switch">
+                        <color key="titleColor" red="0.0084704277090000002" green="0.0097155449030000007" blue="0.0094120285750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="switchCamera:" destination="-1" eventType="touchUpInside" id="NDN-Op-tpn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lm7-aA-kEE">
+                    <rect key="frame" x="253" y="496" width="95" height="39"/>
+                    <color key="backgroundColor" red="0.0084704277090000002" green="0.0097155449030000007" blue="0.0094120285750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="Shoot Me">
+                        <color key="titleColor" red="0.78025360219999995" green="0.78988050539999999" blue="0.79533253209999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="shootMe:" destination="-1" eventType="touchUpInside" id="87g-Sr-epO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OW5-1b-hIz">
+                    <rect key="frame" x="28" y="97" width="41" height="33"/>
+                    <color key="backgroundColor" red="1" green="0.7685913754" blue="0.68803577589999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Flash">
+                        <color key="titleColor" red="0.0084704277090000002" green="0.0097155449030000007" blue="0.0094120285750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="flash:" destination="-1" eventType="touchUpInside" id="FEn-3K-dHj"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqb-Yo-mre">
+                    <rect key="frame" x="391" y="341" width="127" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" red="0.10452370530000001" green="1" blue="0.28627686390000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="hqb-Yo-mre" firstAttribute="leading" secondItem="bOM-61-Wet" secondAttribute="trailing" constant="43" id="6AE-Xy-rzJ"/>
+                <constraint firstAttribute="bottom" secondItem="Lm7-aA-kEE" secondAttribute="bottom" constant="65" id="ISx-8V-91R"/>
+                <constraint firstItem="b7F-3w-Nqa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="Sjg-iS-9Gx"/>
+                <constraint firstItem="Lm7-aA-kEE" firstAttribute="top" secondItem="bOM-61-Wet" secondAttribute="bottom" constant="127" id="e7o-Pf-9t9"/>
+                <constraint firstItem="OW5-1b-hIz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="hhL-NJ-axK"/>
+                <constraint firstItem="bOM-61-Wet" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="1" id="hhL-iB-nFu"/>
+                <constraint firstItem="b7F-3w-Nqa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="23" id="iUA-Go-1S8"/>
+                <constraint firstItem="OW5-1b-hIz" firstAttribute="top" secondItem="b7F-3w-Nqa" secondAttribute="bottom" constant="34" id="wjF-E8-Pub"/>
+                <constraint firstItem="Lm7-aA-kEE" firstAttribute="top" secondItem="hqb-Yo-mre" secondAttribute="bottom" constant="134" id="xtl-EH-nzH"/>
+                <constraint firstItem="Lm7-aA-kEE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="y4F-jl-gvQ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

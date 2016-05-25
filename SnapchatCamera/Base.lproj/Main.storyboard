@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="STY-z4-NO8">
+            <objects>
+                <viewController id="Wvx-YV-PKn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4ng-Z8-Ea4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tz7-oi-MKa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VlE-Jy-Wa2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k3J-Y6-IUg" customClass="FLAnimatedImageView">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k3J-Y6-IUg" firstAttribute="top" secondItem="4ng-Z8-Ea4" secondAttribute="bottom" id="0eZ-T4-ze3"/>
+                            <constraint firstItem="Tz7-oi-MKa" firstAttribute="top" secondItem="k3J-Y6-IUg" secondAttribute="bottom" id="AyK-wm-EfJ"/>
+                            <constraint firstItem="k3J-Y6-IUg" firstAttribute="leading" secondItem="VlE-Jy-Wa2" secondAttribute="leadingMargin" id="MTh-4B-Nta"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k3J-Y6-IUg" secondAttribute="trailing" id="wTi-G5-4eL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhf-zZ-vM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-387" y="237"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SnapchatCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vdu-Lu-PMP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vdu-Lu-PMP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ERz-S4-kxO"/>
+                            <constraint firstAttribute="centerY" secondItem="vdu-Lu-PMP" secondAttribute="centerY" id="cFv-Qu-aC3"/>
+                            <constraint firstAttribute="centerX" secondItem="vdu-Lu-PMP" secondAttribute="centerX" id="gh8-kD-U2d"/>
+                            <constraint firstItem="vdu-Lu-PMP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="qea-X2-bPa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="vdu-Lu-PMP" id="yfA-D4-cFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

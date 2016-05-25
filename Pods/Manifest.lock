@@ -1,0 +1,16 @@
+PODS:
+  - CameraEngine (0.9.1)
+  - FLAnimatedImage (1.0.12)
+  - PBJVideoPlayer (0.3.1)
+
+DEPENDENCIES:
+  - CameraEngine
+  - FLAnimatedImage
+  - PBJVideoPlayer
+
+SPEC CHECKSUMS:
+  CameraEngine: fa2d76cb7075fafdac37760b27856d2b73491790
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  PBJVideoPlayer: b1dfee170c1fd6b0a434c1f1c1583dcd1d836d9f
+
+COCOAPODS: 0.39.0
